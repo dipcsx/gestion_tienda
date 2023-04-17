@@ -1,9 +1,10 @@
-from django.urls import path, include
+from django.urls import path
 from . import views
 
 app_name = 'gestion_tienda'
 
 urlpatterns=[
     path('',views.index,name='index'),
-    path('login',views.show_login,name='pg_login')
+    path('consolaAdministrador',views.consolaAdministrador,name='consolaAdministrador')
+   
 ]
